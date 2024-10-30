@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="src/styles/styles.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Landing page</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <i class="fa-solid fa-burger" id="nav_logo"> food</i>
+
+      <ul id="nav_list">
+        <li class="nav-item active">
+          <a href="#home">Início</a>
+        </li>
+        <li class="nav-item">
+          <a href="#menu">Cardápio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#testimonials">Avaliações</a>
+        </li>
+      </ul>
+
+      <button class="btn-default">
+        Peça aqui
+      </button>
+
+      <button id="mobile_btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <div id="mobile_menu">
+      <ul id="mobile_nav_list">
+        <li class="nav-item">
+          <a href="#home">Início</a>
+        </li>
+        <li class="nav-item">
+          <a href="#menu">Cardápio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#testimonials">Avaliações</a>
+        </li>
+      </ul>
+
+      <button class="btn-default">
+        Peça aqui
+      </button>
+    </div>
+  </header>
+
+  <main id="content">
+    <section id="home">
+      <div class="shape"></div>
+      <div id="cta">
+        <h1 class="title">
+          O sabor que vai até <span>você</span>
+        </h1>
+        <p class="description">
+          Descubra nossas experiências gastronômicas, sem sair de casa!
+        </p>
+
+        <div id="cta_buttons">
+          <a href="#" class="btn-default">
+            Ver cardápio
+          </a>
+
+          <a href="tel:+55555555" id="phone_button">
+            <button class="btn-default">
+              <i class="fa-solid fa-phone"></i>
+            </button>
+            (51) 92342-3243
+          </a>
+        </div>
+
+        <div class="social-media-buttons">
+          <a href="">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+      <div id="banner">
+        <img src="src/images/hero.png" alt="">
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2 class="section-title">Cardápio</h2>
+      <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+      <div id="dishes">
+        <div class="dish">
+          <div class="dish-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <img src="src/images/dish.png" class="dish-image" alt="">
+          <h3 class="dish-title">
+            Poke Tropical
+          </h3>
+
+          <span class="dish-description">
+            Camarões grelhados na perfeição, palmito fresco, tempurá crocante, tomate cereja suculento e um toque adocicado do nosso molho especial. Tudo isso sobre uma base de arroz integral e finalizado com gergelim torrado e cebolinha fresca.
+          </span>
+
+          <div class="dish-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+
+          <div class="dish-price">
+            <h4>R$30,00</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <img src="src/images/dish2.png" class="dish-image" alt="">
+          <h3 class="dish-title">
+            Panini Clássico
+          </h3>
+
+          <span class="dish-description">
+            Um sanduíche de frango grelhado com queijo derretido e legumes frescos, perfeito para um almoço rápido e saboroso.
+          </span>
+
+          <div class="dish-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(400+)</span>
+          </div>
+
+          <div class="dish-price">
+            <h4>R$20,00</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <img src="src/images/dish3.png" class="dish-image" alt="">
+          <h3 class="dish-title">
+            Bowl verde
+          </h3>
+
+          <span class="dish-description">
+            Nossa base cremosa de espinafre e banana se une à doçura dos morangos e ao frescor do kiwi, criando uma combinação irresistível. Finalizamos com coco ralado e sementes de girassol para um toque crocante e nutritivo.
+          </span>
+
+          <div class="dish-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(300+)</span>
+          </div>
+
+          <div class="dish-price">
+            <h4>R$20,00</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <img src="src/images/dish4.png" class="dish-image" alt="">
+          <h3 class="dish-title">
+            Noodles de Camarão Picante
+          </h3>
+
+          <span class="dish-description">
+            Deliciosos noodles de arroz salteados com camarões suculentos e um mix colorido de legumes frescos. O toque especial fica por conta do nosso molho agridoce com um toque de pimenta chili, que garante uma experiência única e irresistível.
+          </span>
+
+          <div class="dish-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+
+          <div class="dish-price">
+            <h4>R$30,00</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <img src="src/images/chef.png" id="testimonial_chef">
+      <div id="testimonials_content">
+        <h2 class="section-title">
+          Depoimentos
+        </h2>
+        <h3 class="section-subtitle">
+          O que os clientes falam sobre nós
+        </h3>
+
+        <div id="feedbacks">
+          <div class="feedback">
+            <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+            <div class="feedback-content">
+              <p>
+                Joana Silva
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+
+                </span>
+              </p>
+              <p>
+                "Simplesmente delicioso! Os noodles estavam no ponto certo, o camarão suculento e os vegetais fresquinhos. A combinação dos sabores era perfeita. Super recomendo!"
+              </p>
+            </div>
+          </div>
+          <div class="feedback">
+            <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+            <div class="feedback-content">
+              <p>
+                Joana Silva
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+
+                </span>
+              </p>
+              <p>
+                "Simplesmente delicioso! Os noodles estavam no ponto certo, o camarão suculento e os vegetais fresquinhos. A combinação dos sabores era perfeita. Super recomendo!"
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-default">
+          Ver mais avaliações
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="src/images/wave.svg" alt="">
+
+    <div id="footer_items">
+      <span id="copyright">
+        &copy 2024 Taís Pestana
+      </span>
+      <div class="social-media-buttons">
+        <a href="">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="src/javascript/script.js"></script>
+</body>
+
+</html>
